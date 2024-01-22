@@ -7,25 +7,17 @@
 
 import SwiftUI
 import SwiftData
+import q2successStudent
+import q2successPresentation
 
 @main
 struct q2successApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+    
+    var sharedModelContainer: ModelContainer = StudentModelLoader.sharedModelContainer
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StudentContentView()
         }
         .modelContainer(sharedModelContainer)
     }
