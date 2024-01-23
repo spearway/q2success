@@ -7,7 +7,25 @@
 		<key>q2success.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8F2A62D12B4B343100BEDC57</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F2A62E52B4B343300BEDC57</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F2A62EF2B4B343300BEDC57</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
